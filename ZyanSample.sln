@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZyanSample.Shared", "ZyanSample.Shared\ZyanSample.Shared.csproj", "{32E7D393-10F0-442D-90F4-089B091C686E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZyanSample.Host", "ZyanSample.Host\ZyanSample.Host.csproj", "{D54D304F-2B21-438B-996C-9DDA963F03E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZyanSample.Client", "ZyanSample.Client\ZyanSample.Client.csproj", "{D5430BE5-06A7-4E8C-A02F-186A4AF1BD04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32E7D393-10F0-442D-90F4-089B091C686E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E7D393-10F0-442D-90F4-089B091C686E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E7D393-10F0-442D-90F4-089B091C686E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E7D393-10F0-442D-90F4-089B091C686E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54D304F-2B21-438B-996C-9DDA963F03E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54D304F-2B21-438B-996C-9DDA963F03E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54D304F-2B21-438B-996C-9DDA963F03E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54D304F-2B21-438B-996C-9DDA963F03E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5430BE5-06A7-4E8C-A02F-186A4AF1BD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5430BE5-06A7-4E8C-A02F-186A4AF1BD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5430BE5-06A7-4E8C-A02F-186A4AF1BD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5430BE5-06A7-4E8C-A02F-186A4AF1BD04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
