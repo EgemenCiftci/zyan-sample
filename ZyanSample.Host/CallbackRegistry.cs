@@ -6,7 +6,7 @@ namespace ZyanSample.Host
 {
     internal class CallbackRegistry
     {
-        private ConcurrentDictionary<string, Action<string, Message>> _registry;
+        private readonly ConcurrentDictionary<string, Action<string, Message>> _registry;
 
         private static readonly object _singletonLock = new object();
         private static CallbackRegistry _singleton;
@@ -86,7 +86,7 @@ namespace ZyanSample.Host
             }
 
 
-            _registry.TryGetValue(name, out Action<string, Message> callback);
+            _ = _registry.TryGetValue(name, out Action<string, Message> callback);
             return callback;
         }
     }

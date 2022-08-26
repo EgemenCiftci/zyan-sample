@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ZyanSample.Client</RootNamespace>
     <AssemblyName>ZyanSample.Client</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile>
@@ -39,17 +39,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Zyan.Communication, Version=2.10.0.0, Culture=neutral, PublicKeyToken=022216e8e71b6602, processorArchitecture=MSIL">
-      <HintPath>..\packages\Zyan.2.10.0\lib\net46\Zyan.Communication.dll</HintPath>
-    </Reference>
-    <Reference Include="Zyan.SafeDeserializationHelpers, Version=0.1.0.0, Culture=neutral, PublicKeyToken=91d1de3df99ea180, processorArchitecture=MSIL">
-      <HintPath>..\packages\Zyan.SafeDeserializationHelpers.0.5.0\lib\net35\Zyan.SafeDeserializationHelpers.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -57,13 +52,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ZyanSample.Shared\ZyanSample.Shared.csproj">
       <Project>{32e7d393-10f0-442d-90f4-089b091c686e}</Project>
       <Name>ZyanSample.Shared</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="srp">
+      <Version>1.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Zyan">
+      <Version>2.15.0</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

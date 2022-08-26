@@ -18,7 +18,7 @@ namespace ZyanSample.Host
                 Console.WriteLine(ex.StackTrace);
             }
 
-            Console.ReadKey();
+            _ = Console.ReadKey();
         }
 
         private static void Init()
@@ -38,9 +38,9 @@ namespace ZyanSample.Host
             Console.WriteLine("Listening on port {0}.", port);
 
             // Start three clients
-            Process.Start("Client\\ZyanSample.Client.exe", "0");
-            Process.Start("Client\\ZyanSample.Client.exe", "1");
-            Process.Start("Client\\ZyanSample.Client.exe", "2");
+            _ = Process.Start("Client\\ZyanSample.Client.exe", "0");
+            _ = Process.Start("Client\\ZyanSample.Client.exe", "1");
+            _ = Process.Start("Client\\ZyanSample.Client.exe", "2");
         }
     }
 }

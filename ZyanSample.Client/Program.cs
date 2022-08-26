@@ -7,7 +7,7 @@ namespace ZyanSample.Client
     internal class Program
     {
         private static string userName;
-        private static Random random = new Random();
+        private static readonly Random random = new Random();
 
         private static void Main(string[] args)
         {
@@ -22,7 +22,7 @@ namespace ZyanSample.Client
                 Console.WriteLine(ex.StackTrace);
             }
 
-            Console.ReadKey();
+            _ = Console.ReadKey();
         }
 
         private static void Init()
@@ -41,7 +41,7 @@ namespace ZyanSample.Client
             if (success)
             {
                 Console.WriteLine("Press a key to send a message...");
-                Console.ReadKey();
+                _ = Console.ReadKey();
 
                 for (int i = 0; true; i++)
                 {
@@ -55,7 +55,7 @@ namespace ZyanSample.Client
                     proxy.Send(userName, randomName, new Message { Id = i, Content = "Hello from client " + userName });
 
                     Console.WriteLine("Press a key to send a message...");
-                    Console.ReadKey();
+                    _ = Console.ReadKey();
                 }
             }
             else
